@@ -9,6 +9,7 @@ import retrofit2.http.Headers;
 
 
 public interface APIService {
+
     @Headers("X-Auth-Token: YOUR_API_TOKEN")
     @GET("v1/competitions")
 

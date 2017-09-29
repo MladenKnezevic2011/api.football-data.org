@@ -17,7 +17,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class MainActivity extends AppCompatActivity {
 
     private LinearLayoutManager layoutManager;
-    List<User> userList =null;
+    List<User> itemsList =null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,14 +46,14 @@ public class MainActivity extends AppCompatActivity {
             call.enqueue(new Callback<List<User>>() {
                 @Override
                 public void onResponse(Call<List<User>> call, Response<List<User>> response) {
-                    userList = response.body();
+                    itemsList = response.body();
 
                     RecyclerView recyclerView = (RecyclerView)findViewById(R.id.recycler);
 
                     layoutManager = new LinearLayoutManager(MainActivity.this);
                     recyclerView.setLayoutManager(layoutManager);
 
-                    RecyclerViewAdapter recyclerViewAdapter =new RecyclerViewAdapter(getApplicationContext(), userList);
+                    RecyclerViewAdapter recyclerViewAdapter =new RecyclerViewAdapter(getApplicationContext(), itemsList);
                     recyclerView.setAdapter(recyclerViewAdapter);
                 }
 
