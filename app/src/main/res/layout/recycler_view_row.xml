@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tvCaption"
+            style="@style/textLeft"
+            android:text="@string/caption" />
+
+        <TextView
+            android:id="@+id/tvCaptionRight"
+            style="@style/textRight" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvLeague"
+            style="@style/textLeft"
+            android:text="@string/league" />
+
+        <TextView
+            android:id="@+id/tvLeagueRight"
+            style="@style/textRight" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tvYear"
+            style="@style/textLeft"
+            android:text="@string/year" />
+
+        <TextView
+            android:id="@+id/tvYearRight"
+            style="@style/textRight" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tvCurrentMatchDay"
+            style="@style/textLeft"
+            android:text="@string/currentmatchday" />
+
+        <TextView
+            android:id="@+id/tvCurrentMatchDayRight"
+            style="@style/textRight" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tvNumberOfMatchdays"
+            style="@style/textLeft"
+            android:text="@string/numberofmatchdays" />
+
+        <TextView
+            android:id="@+id/tvNumberOfMatchdaysRight"
+            style="@style/textRight" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tvNumberOfTeams"
+            style="@style/textLeft"
+            android:text="@string/numberofteams" />
+
+        <TextView
+            android:id="@+id/tvNumberOfTeamsRight"
+            style="@style/textRight" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tvNumberOfGames"
+            style="@style/textLeft"
+            android:text="@string/numberofgames" />
+
+        <TextView
+            android:id="@+id/tvNumberOfGamesRight"
+            style="@style/textRight" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tvlastUpdated"
+            style="@style/textLeft"
+            android:text="@string/lastupdated" />
+
+        <TextView
+            android:id="@+id/tvlastUpdatedRight"
+            style="@style/textRight" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimary" />
+</LinearLayout>
